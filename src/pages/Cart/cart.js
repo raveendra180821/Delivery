@@ -5,7 +5,7 @@ import { IoIosRemoveCircleOutline } from "react-icons/io";
 
 const Cart = () => {
 
-    const {food_list,cartItems,removeFromCart} = useContext(StoreContext)
+    const {food_list,cartItems,removeCartItem} = useContext(StoreContext)
 
     return(
         <div className="cart">
@@ -19,24 +19,23 @@ const Cart = () => {
                 <p>Remove</p>
             </div>
             {food_list.map((item) =>{
-                for (let cartItem in cartItems){
-                    if (cartItems[cartItem]>0){
-                        return(
-                            <div>
-                                <div className="cart-item">
-                                    <img src={item.image} alt="item-img" />
-                                    <p>{item.name}</p>
-                                    <p>${item.price}</p>
-                                    <p>{cartItems[cartItem]}</p>
-                                    <p>${item.price*cartItems[cartItem]}</p>
-                                    <IoIosRemoveCircleOutline onClick={() => removeFromCart(item._id)} />
-                                </div>
-                                <hr/>
+                if (cartItems[item._id]>0){
+                    return(
+                        <div>
+                            <div className="cart-item">
+                                <img src={item.image} alt="item-img" />
+                                <p>{item.name}</p>
+                                <p>${item.price}</p>
+                                <p>{cartItems[item._id]}</p>
+                                <p>${item.price*cartItems[item._id]}</p>
+                                <IoIosRemoveCircleOutline onClick={() => removeCartItem(item._id)} />
                             </div>
-                        )
-                    }     
+                            <hr/>
+                        </div>
+                    )
+                }else{
+                    return <></>
                 }
-                return <></>
             })}
         </div>
     )
