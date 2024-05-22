@@ -1,0 +1,56 @@
+.place-order{
+    width: 80%;
+    display: flex;
+    gap: max(10vw, 30px);
+    margin: 80px 0;
+}
+.place-order-left{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.place-order-left h1{
+    font-size: 24px;
+    color: tomato;
+    margin-bottom: 20px;
+}
+.multi-fields{
+    display: flex;
+    gap: 10px;
+}
+.place-order-left input{
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5c5;
+    outline-color: rgb(248, 135, 116);
+    border-radius: 4px;
+    font-size: 16px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.mobile{
+    max-width: 49%;
+}
+.place-order-right{
+    flex: 1;
+}
+@media screen and (max-width: 750px) {
+    .place-order{
+        margin-top: 0;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+    .multi-fields{
+        flex-direction: column;
+    }
+    .mobile{
+        max-width: 100%;
+    }
+}
