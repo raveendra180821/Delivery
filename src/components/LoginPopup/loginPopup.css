@@ -1,0 +1,83 @@
+.login-popup{
+    background-color: #00000090;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: fadeIn 0.5s;
+}
+.login-popup form{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 350px;
+}
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login-popup-title h1{
+    font-size: 20px;
+    color: #000000;
+}
+.form-close{
+    font-size: 25px;
+}
+.form-close:hover{
+    border: 1px solid #000000;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.login-popup-input-fields input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 6px 6px 10px;
+    outline: none;
+    margin: 10px 0;
+    border: 1px solid #bfbbbb;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login-popup form button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0;
+}
+.login-popup-conditions{
+    display: flex;
+    align-items: start;
+}
+.login-popup-conditions input{
+    margin: 4px 10px 0 0;
+}
+.login-popup-conditions p{
+    font-size: 14px;
+    color: #5f5d5d;
+}
+.login-popup .redirect{
+    font-size: 14px;
+    color: #5f5d5d;
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.redirect span{
+    color: tomato;
+    margin-left: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}

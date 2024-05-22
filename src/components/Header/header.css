@@ -1,0 +1,118 @@
+.header{
+    background-image: url('/home/raveendragulivindala/Desktop/Tomato/delivery/public/header_img.png');
+    background-size: cover;
+    height: 70vh;
+    border-radius: 10px;
+    position: relative;
+   
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 60%;
+    left: 5vw;
+    bottom: 10%;
+    position: absolute;
+    animation: fadeIn 2s;
+}
+.header-content h1{
+    font-size: max(4vw, 24px);
+    color: #ffffff;
+    font-weight: 600;
+}
+.header-content p{
+    font-size: 1.3vw;
+    color: #ffffff;
+    font-weight: 400;
+}
+.header-content button{
+    border: none;
+    background-color: #ffffff;
+    color: #797777;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.header-content button:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 8px 0 #f7b5b5;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header{
+        height: 65vh;
+    }
+    .header-content{
+        max-width: 50%;
+    }
+    .header-content p{
+        font-size: max(1vw, 14px); 
+    }
+    .header-content button{
+        padding: 8px 26px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header{
+        height: 40vh;
+    }
+    .header-content{
+        max-width: 50%;
+    }
+    .header-content p{
+        font-size: max(1vw,12px); 
+    }
+    .header-content button{
+        font-size: max(1vw,12px);
+        padding: 8px 22px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .header{
+        height: 40vh;
+    }
+    .header-content{
+        max-width: 50%;
+    }
+    .header-content p{
+        font-size: max(1vw, 10px); 
+    }
+    .header-content button{
+        font-size: max(1vw,10px);
+        padding: 6px 20px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .header{
+        height: 30vh;
+    }
+    .header-content{
+        min-width: 70%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header{
+        height: 20vh;
+    }
+    
+    .header-content p{
+        display: none;
+    }
+}

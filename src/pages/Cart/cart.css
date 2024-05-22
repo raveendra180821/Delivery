@@ -1,0 +1,28 @@
+.cart{
+    width: 80%;
+    min-height: 38vh;
+}
+.cart-content h1{
+    font-size: 22px;
+}
+.cart-items{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #636261;
+}
+.cart-item img{
+    width: 60px;
+}
+.cart hr{
+    height: 2px;
+    background-color: #edebeb;
+    border: none;
+    margin: 8px 0;
+}

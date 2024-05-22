@@ -1,0 +1,123 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.navbar .logo{
+    width: 95px;
+    cursor: pointer;
+}
+.navbar .menu{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 18px;
+
+}
+.menu-item{
+    color: #550274;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 2px solid #510b6a;
+    height: 26px;
+    transition: 0.5s;
+    
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.search-icon{
+    width: 24px;
+}
+
+.navbar-cart{
+    position: relative;
+    cursor: pointer;
+
+}
+.cart-icon{
+    width: 24px;
+}
+.cart-status-dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border: 4px solid tomato;
+    border-radius: 50%;
+}
+.navbar-right button{
+    font-size: 14px;
+    border: 2px solid tomato;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+.navbar-right button:hover{
+    background-color: tomato;
+    color: #ffffff;
+    cursor: pointer;
+}
+@media screen and (max-width: 1050px) {
+    .navbar .logo{
+        width: 90px;
+    }
+    .navbar .menu{
+        gap: 25px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-cart, .search-icon{
+        width: 22px;
+    }
+    .navbar-right button{
+        font-size: 13px;
+        padding: 7px 18px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .navbar .logo{
+        width: 80px;
+    }
+    .navbar .menu{
+        gap: 20px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 25px;
+    }
+    .navbar-cart, .search-icon{
+        width: 22px;
+    }
+    .navbar-right button{
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .navbar .menu{
+        display: none;
+    }
+    .navbar .logo{
+        width: 70px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-cart, .search-icon{
+        width: 20px;
+    }
+    .navbar-right button{
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+}
